@@ -81,4 +81,81 @@ button{
   padding: 11px 40px;
   font-family: inherit;
 }
+.features{
+  padding: 148px 0;
+}
 
+.features__text{
+  width: 59%;
+}
+
+.features__list{
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  margin-top: 40px;
+}
+
+.features__item{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 56px;
+}
+
+.promo{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 130px;
+}
+
+.promo__form{
+  margin-top: 70px;
+}
+
+.step{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  gap: 24px;
+}
+
+input[type="tel"]{
+  background-color: inherit;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  appearance: none; 
+  width: 24px;
+  height: 24px;
+  background-color: transparent; 
+  border: 2px solid white;
+  flex-shrink: 0; 
+  display: inline-block;
+}
+
+input[type="checkbox"]:checked {
+  background-color: transparent; 
+  background-image: url("./img/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px; 
+}
+
+.telephone{
+  color:#8F9399;
+  font-size: 13px;
+}
+
+.form__agree{
+  display: flex;
+  gap: 8px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.form__agree label{
+  font-size: 16px;
+}

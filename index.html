@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="import" href="component.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tele 2</title>
   </head>
   <body>
     <header class="header">
       <a href="" class="logo">
-        <img src="./src/img/Logo.png" alt="" loading="lazy">
+        <img src="./src/img/Logo.png" alt="Логотип" loading="lazy">
       </a>
       <div class="header__location">
-        <img src="./src/img/Location.png" alt="">
+        <img src="./src/img/Location.png" alt="Расположение">
         <p>Санкт-Петербург</p>
       </div>
     </header>
@@ -26,8 +27,57 @@
              в подарок для новых абонентов</p>
           <button>Принять участие</button>
       </div>
-      <img src="./src/img/Boss1.png" alt="" class="info-block__image" loading="lazy">
+      <img src="./src/img/Boss1.png" alt="Изображение на глвной странице" class="info-block__image" loading="lazy">
       </section>
+      <section class="features">
+        <h2>Один терабайт — много любимых развлечений</h2>
+        <p class="features__text">Подарок получают только новые абоненты при подключении услуг Tele2 
+          с тарифом «Мой онлайн+». Трафик расходуется в течение года. </p>
+        <section class="features__list">
+          <article class="features__item">
+              <img src="./src/img/advantages1.svg" alt="Преимущество">
+              <p>Около 500 часов видео</p>
+          </article>
+          <article class="features__item">
+              <img src="./src/img/advantages2.svg" alt="Преимущество">
+              <p>Примерно 200 000 песен</p>
+          </article>
+          <article class="features__item">
+              <img src="./src/img/advantages3.svg" alt="Преимущество">
+              <p>Порядка 300 000 фото</p>
+          </article>
+        </section>
+      </section>
+      <section class="promo">
+        <section class="promo__wrapper">
+          <h2>Несколько шагов
+            <span>и 1 ТБ — ваш</span></h2>
+          <form action="" class="promo__form">
+            <label for="telephone" class="telephone">Номер телефона</label>
+            <input type="tel" name="telephone" id="">
+            <div class="form__agree">
+              <input type="checkbox">
+              <label>Даю согласие на обработку персональных данных. <a href="">Условия соглашения.</a></label>
+            </div>
+            <button>Выслать промокод</button>
+          </form>
+        </section>
+        <section class="promo__steps">
+          <div class="step">
+            <img src="/src/img/step1.svg" alt="">
+            <p>Ведите свой номер телефона, затем дождитесь смс с промокодом для получения Тб</p>
+          </div>
+          <div class="step">
+            <img src="/src/img/step2.svg" alt="">
+            <p>Перейдите на <a href="#">сайт Tele2</a> и активируйте промокод при подключении на тариф «Мой Онлайн+»</p>
+          </div>
+          <div class="step">
+            <img src="/src/img/step3.svg" alt="">
+            <p>Используйте свой подарочный ТБ от Tele2 в течение всего года</p>
+          </div>
+        </section>
+      </section>
+      <section></section>
     </div>
     </main>
     <footer>
