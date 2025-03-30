@@ -1,0 +1,84 @@
+@font-face {
+	font-family: 'Tele2TextSansSHORT-Regular';
+	src: url('./fonts/tele2textsansshort-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/tele2textsansshort-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/tele2textsansshort-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/tele2textsansshort-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/tele2textsansshort-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/tele2textsansshort-regular.svg#tele2textsansshort-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'StandardCTStencil-Bold';
+	src: url('./fonts/standardctstencil-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/standardctstencil-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/standardctstencil-bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/standardctstencil-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/standardctstencil-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/standardctstencil-bold.svg#standardctstencil-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+a{
+  color: inherit;
+}
+
+body{
+  background-color: #1F2229;
+  color: #fff;
+  font-family: 'Tele2TextSansSHORT-Regular';
+  line-height: 150%;
+  font-size: clamp(18px, 1.8vw, 20px);
+  margin: 0;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #383D4A;
+  padding: 20px 30px;
+}
+
+.header__location{
+  display: flex;
+  align-items: center;
+}
+
+.container{
+  max-width: 1116px;
+  margin: 0 auto;
+}
+
+.info-block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-block__text h1{
+  font-family: 'StandardCTStencil-Bold';
+  font-size: clamp(36px, 5vw, 68px);
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+span{
+  color:#48CCFD;
+}
+
+button{
+  border-radius: 48px;
+  padding: 11px 40px;
+  font-family: inherit;
+}
+
