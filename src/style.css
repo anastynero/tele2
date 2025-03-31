@@ -28,15 +28,32 @@ html{
   box-sizing: inherit;
 }
 
+:root {
+  --text-color: #fff;
+  --secondary-text-color: #8F9399;
+  --bg-color: #1F2229;
+  --border-color: #383D4A;
+  --highlight-color: #48CCFD;
+  --font-primary: 'Tele2TextSansSHORT-Regular', sans-serif;
+  --font-secondary: 'StandardCTStencil-Bold', sans-serif;
+  --container-width: 1116px;
+  --border-radius: 48px;
+  --header-padding: 20px 30px;
+  --section-padding: 148px;
+  --gap-large: 130px;
+  --gap-medium: 56px;
+  --gap-small: 8px;
+}
+
 a{
   color: inherit;
 }
 
 body{
-  background-color: #1F2229;
-  color: #fff;
-  font-family: 'Tele2TextSansSHORT-Regular';
-  line-height: 150%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-primary);
+  line-height: 1.5;
   font-size: clamp(18px, 1.8vw, 20px);
   margin: 0;
 }
@@ -45,8 +62,8 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #383D4A;
-  padding: 20px 30px;
+  border-block-end: 1px solid var(--border-color);
+  padding: var(--header-padding);
 }
 
 .header__location{
@@ -55,8 +72,8 @@ body{
 }
 
 .container{
-  max-width: 1116px;
-  margin: 0 auto;
+  max-inline-size: var(--container-width);
+  margin-inline: auto;
 }
 
 .info-block{
@@ -66,23 +83,24 @@ body{
 }
 
 .info-block__text h1{
-  font-family: 'StandardCTStencil-Bold';
+  font-family: var(--font-secondary);
   font-size: clamp(36px, 5vw, 68px);
   text-transform: uppercase;
   line-height: 100%;
 }
 
 span{
-  color:#48CCFD;
+  color: var(--highlight-color);
 }
 
 button{
-  border-radius: 48px;
+  border-radius: var(--border-radius);
   padding: 11px 40px;
   font-family: inherit;
 }
+
 .features{
-  padding: 148px 0;
+  padding-block: var(--section-padding);
 }
 
 .features__text{
@@ -98,14 +116,14 @@ button{
 .features__item{
   display: flex;
   justify-content: space-between;
-  margin-right: 56px;
+  margin-inline-end: var(--gap-medium);
 }
 
 .promo{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 130px;
+  gap: var(--gap-large);
 }
 
 .promo__form{
@@ -122,7 +140,7 @@ button{
 input[type="tel"]{
   background-color: inherit;
   border: 0;
-  border-bottom: 1px solid #fff;
+  border-block-end: 1px solid var(--text-color);
   width: 100%;
 }
 
@@ -131,7 +149,7 @@ input[type="checkbox"] {
   width: 24px;
   height: 24px;
   background-color: transparent; 
-  border: 2px solid white;
+  border: 2px solid var(--text-color);
   flex-shrink: 0; 
   display: inline-block;
 }
@@ -144,18 +162,48 @@ input[type="checkbox"]:checked {
   background-size: 12px; 
 }
 
-.telephone{
-  color:#8F9399;
+.telephone, .copyright-chulakov p{
+  color: var(--secondary-text-color);
   font-size: 13px;
 }
 
 .form__agree{
   display: flex;
-  gap: 8px;
+  gap: var(--gap-small);
   margin-top: 24px;
   margin-bottom: 32px;
 }
 
 .form__agree label{
   font-size: 16px;
+}
+
+.call-to-action{
+  display: flex;
+  justify-content: space-between;
+  margin: 147px 0;
+}
+
+.footer__links{
+  border-bottom: 1px solid var(--text-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copyright{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 42px 0;
+}
+
+.copyright-tele2, .copyright-chulakov{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.social img{
+  margin-right: 16px;
 }
