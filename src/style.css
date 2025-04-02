@@ -91,8 +91,6 @@ h2{
 }
 
 .info-block__image{
-  width: 584;
-  height: 551;
   object-fit: cover; 
 }
 
@@ -120,6 +118,7 @@ button{
   font-size: 16px;
   font-weight: 600;
   border: none;
+  color:#000;
 }
 
 button:focus{
@@ -325,6 +324,7 @@ input[type="checkbox"]:checked {
 }
 
 #response-message{
+  display: none;
   background-color: #262B36;
   border-radius: 8px;
   font-size: 13px;
@@ -361,8 +361,8 @@ input[type="checkbox"]:checked {
   }
 
   .info-block__image{
-    width: 316;
-    height: 333;
+    object-fit: cover;
+    margin-top: var(--margin-large);
   }
 
   .header {
@@ -393,18 +393,22 @@ input[type="checkbox"]:checked {
   .features__list{
     display: flex;
     flex-direction: column;
-    gap: var(--gap-large);
+    gap: 32px;
   }
 
   .features__item{
     justify-content: start;
-    gap: var(--gap-small);
+    gap: 16px;
     width: 100%;
   }
 
   .promo {
     display: flex;
     flex-direction: column;
+  }
+
+  .promo h2{
+    margin-bottom: var(--margin-medium);
   }
 
   .promo button{
