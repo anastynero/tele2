@@ -12,6 +12,8 @@
 
 html{
   box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 *,
@@ -50,6 +52,8 @@ body{
   line-height: 1.5;
   font-size: clamp(18px, 2.5vw, 20px);
   margin: 0;
+  touch-action: pan-y;
+  overscroll-behavior-y: contain;
 }
 
 h2{
@@ -88,10 +92,6 @@ h2{
   justify-content: space-between;
   align-items:start;
   margin-top: 56px;
-}
-
-.info-block__image{
-  object-fit: cover; 
 }
 
 .info-block__text h1{
@@ -361,8 +361,12 @@ input[type="checkbox"]:checked {
   }
 
   .info-block__image{
-    object-fit: cover;
     margin-top: var(--margin-large);
+    max-width: 100%;
+    height: auto;   
+    display: block;   
+    object-fit: contain; 
+    object-position: center; 
   }
 
   .header {
